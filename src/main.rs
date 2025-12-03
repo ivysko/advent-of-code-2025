@@ -1,8 +1,9 @@
 mod day1;
 mod day2;
+mod day3;
 
 use std::fs;
-use crate::day2::{part1, part2, SMALL_INPUT};
+use crate::day3::{part1, part2, SMALL_INPUT};
 
 fn main() {
     println!("Advent of Code 2025\n\n");
@@ -16,14 +17,10 @@ fn main() {
         println!("part2: {}", part2(SMALL_INPUT));
     }
     else {
-        let content = fs::read_to_string("input/input-day2.txt").expect("Should have been able to read the file").trim().to_string();
+        let content = fs::read_to_string("input/input-day3.txt").expect("Should have been able to read the file").trim().to_string();
 
         println!("part1: {}", part1(&content));
         println!("part2: {}", part2(&content));
     }
-
-
-
-
 
 }
